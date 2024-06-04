@@ -6,7 +6,7 @@ export const hdl = `// This file is part of www.nand2tetris.org
  * 16-bit register:
  * If load is asserted, the register's value is set to in;
  * Otherwise, the register maintains its current value:
- * if (load(t)) out(t+1) = int(t), else out(t+1) = out(t)
+ * if (load(t)) out(t+1) = in(t), else out(t+1) = out(t)
  */
 CHIP Register {
     IN in[16], load;
